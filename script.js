@@ -17,12 +17,19 @@ function PrintDeveloperbyForEach() {
 
 function addData() {
   //Write your code here, just console.log
-
+  const obj = {
+    id:4, name: "susan",age:"20",profession:"intern"
+  }
+  arr.push(obj);
+  console.log(arr)
 }
 
 function removeAdmin() {
   //Write your code here, just console.log
-  
+  const newArr = arr.filter(object => {
+    return object.profession != "admin";
+  });
+  console.log(newArr);
 }
 
 function concatenateArray() {
